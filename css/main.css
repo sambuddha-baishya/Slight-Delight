@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(to bottom, #333, lightgray); */
+}
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    padding: 1rem 1.5rem;
+    position: fixed;
+}
+
+header h1{
+    margin-left: 12px;
+    color: whitesmoke;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    font-size: 18px;
+}
+header nav ul li{
+    margin: 0 18px;
+}
+
+header nav ul li a{
+    color: yellow;
+    text-decoration: none;
+    height: 30px;
+    width: 50px;
+    padding: 0.5rem;
+    
+}
+
+header nav ul li a:hover{
+    color: #333;
+    background-color: yellow;
+    height: 30px;
+    width: 50px;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+main{
+    padding: 20px;
+}
+
+main .home-image figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+#menu h2{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    color:rgb(255, 106, 0);
+}
+
+thead, tbody, tfoot, tr{
+    display: contents;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "hd1 hd2 hd3"
+        "veg veg1 veg1p"
+        "veg veg2 veg2p"
+        "veg veg3 veg3p"
+        "non-veg non-veg1 non-veg1p"
+        "non-veg non-veg2 non-veg2p"
+        "non-veg non-veg3 non-veg3p"
+        "cheese cheese1 cheese1p"
+        "cheese cheese2 cheese2p"
+        "cheese cheese3 cheese3p"
+        "fries fries fries";
+    gap: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.menu-header1{
+    grid-area: hd1;
+}
+
+.menu-header2{
+    grid-area: hd2;
+}
+
+.menu-header3{
+    grid-area: hd3;
+}
+
+.menu-veg{
+    grid-area: veg;
+}
+
+.menu-non-veg{
+    grid-area: non-veg;
+}
+
+.menu-cheese{
+    grid-area: cheese;
+}
+
+.menu-fries{
+    grid-area: fries;
+}
+
+.menu-veg, .menu-non-veg, .menu-cheese, .menu-fries{
+    /* height: 100%; */
+    display: grid;
+    place-content: center;
+    color: rgb(255, 106, 0);
+    font-weight: 700;
+}
+
+.menu-header1, .menu-header2, .menu-header3{
+    color: rgb(255, 106, 0);
+    display: grid;
+    place-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    
+}
+
+.menu-header1, .menu-header2, .menu-header3, .menu-item{
+    /* width: 100%; */
+    padding: 1rem;
+    border: medium ridge #333;
+}
+
+.menu-item{
+    display: grid;
+    place-content: center;
+}
+
+thead th:first-child{
+    border-top-left-radius: 15px;
+}
+
+thead th:last-child{
+    border-top-right-radius: 15px;
+}
+
+.menu-fries{
+    border-radius: 0 0 15px 15px;
+}
+
+main .back{
+    text-align: center;
+    margin-top: 50px;
+}
+
+main .back a{
+    color: yellow;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+footer .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+/* html {
+    font-size: 22px;
+} */
+
+/* body {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+ */
+
+/* th, td, caption {
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: separate;
+    padding: 0.5rem;
+} */

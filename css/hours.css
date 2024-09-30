@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(to bottom, #333, lightgray); */
+}
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    padding: 1rem 1.5rem;
+    position: fixed;
+}
+
+header h1{
+    margin-left: 12px;
+    color: whitesmoke;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    font-size: 18px;
+}
+header nav ul li{
+    margin: 0 18px;
+}
+
+header nav ul li a{
+    color: yellow;
+    text-decoration: none;
+    height: 30px;
+    width: 50px;
+    padding: 0.5rem;
+    
+}
+
+header nav ul li a:hover{
+    color: #333;
+    background-color: yellow;
+    height: 30px;
+    width: 50px;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+main{
+    padding: 20px;
+}
+
+main figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+main .heading{
+    margin-top: 15px;
+}
+
+main .heading strong{
+    color: rgb(255, 106, 0);
+    font-size: 20px;
+}
+
+thead, tbody,tr{
+    display: contents;
+}
+
+.timing-container{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "hd1 hd2"
+        "day1 time1"
+        "day2 time2";
+    gap: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.menu-header1{
+    grid-area: hd1;
+}
+
+.menu-header2{
+    grid-area: hd2;
+}
+
+.grid-items-day1{
+    grid-area: day1;
+}
+
+.grid-items-day2{
+    grid-area: day2;
+}
+
+.grid-items-timing1{
+    grid-area: time1;
+}
+
+.grid-items-timing2{
+    grid-area: time2;
+}
+
+.grid-items{
+    display: grid;
+    place-content: center;
+}
+
+.menu-header1, .menu-header2{
+    display: grid;
+    place-content: center;
+    color:rgb(255, 106, 0);
+}
+
+.menu-header1, .menu-header2, .grid-items{
+    padding: 1rem;
+    border: medium ridge #333;
+}
+
+main .back{
+    text-align: center;
+    margin-top: 50px;
+}
+
+main .back a{
+    color: yellow;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+footer .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: whitesmoke;
+}
+
